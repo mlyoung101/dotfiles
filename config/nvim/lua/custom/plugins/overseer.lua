@@ -8,6 +8,11 @@ return {
             "<leader>ot",
             "<cmd>OverseerToggle<cr>",
             desc = "[O]verseer [T]oggle",
+        },
+        {
+            "<leader>or",
+            "<cmd>OverseerRun<cr>",
+            desc = "[O]verseer [R]un",
         }
     },
     config = function()
