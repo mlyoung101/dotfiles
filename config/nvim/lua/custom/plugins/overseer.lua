@@ -1,5 +1,5 @@
 return {
-    'stevearc/overseer.nvim',
+    "stevearc/overseer.nvim",
     opts = {},
     lazy = true,
     event = "VeryLazy",
@@ -13,11 +13,11 @@ return {
             "<leader>or",
             "<cmd>OverseerRun<cr>",
             desc = "[O]verseer [R]un",
-        }
+        },
     },
     config = function()
         require("overseer").setup({
-            templates = { "builtin", "user.typst_watch", "user.typst_thesis" },
+            templates = { "builtin", "user.typst_watch", "user.typst_thesis", "user.hugo_serve" },
         })
-    end
+    end,
 }
