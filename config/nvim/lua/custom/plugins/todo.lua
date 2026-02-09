@@ -1,5 +1,6 @@
 return {
-    "folke/todo-comments.nvim",
+    -- TODO upstream is so far refusing to merge the PR, so use the PR branch directly
+    "belltoy/todo-comments.nvim",
     lazy = true,
     event = "VeryLazy",
     dependencies = {
