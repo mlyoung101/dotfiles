@@ -302,7 +302,8 @@ require("lazy").setup({
             -- vim.lsp.enable("slang-server")
 
             vim.lsp.config("sv-slingshot", {
-                cmd = { "/home/matt/workspace/slingshot/build_debug/slingshot" },
+                -- cmd = { "/home/matt/workspace/slingshot/build_debug/slingshot_asan" },
+                cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build/slingshot" },
                 root_markers = { ".git", ".slingshot.yaml" },
                 filetypes = {
                     "systemverilog",

@@ -4,7 +4,7 @@ return {
     -- Full path to current file (see :help expand())
     local file = vim.fn.expand("%:p")
     return {
-      cmd = { "hugo", "serve" },
+      cmd = { "hugo", "serve", "-D" },
       components = { "default" },
     }
   end,

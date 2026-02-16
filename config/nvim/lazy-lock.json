@@ -52,6 +52,7 @@
   "spaceless.nvim": { "branch": "main", "commit": "927fb0afb416ea39306af5842c247d810dfd5938" },
   "strudel.nvim": { "branch": "main", "commit": "a6b9752b0084a20c37786b54eef2095bb31daff7" },
   "suda.vim": { "branch": "master", "commit": "9adda7d195222d4e2854efb2a88005a120296c47" },
+  "systemrdl.vim": { "branch": "master", "commit": "6d70bdf010a1d9969fe6e1ac0b2af71ec41cb82d" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
   "uuid-nvim": { "branch": "master", "commit": "0501b83be8ac6ae7697632b9476ceaea8e776bb0" },
