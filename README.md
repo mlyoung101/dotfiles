@@ -40,6 +40,13 @@ yet an exhaustive list):
 - Lua 5.1 (lua51 on Arch)
 - ...some more I probably forgot and will discover on my next fresh install
 
+The new TWM setup requires:
+- Niri
+- Sunsetr
+- Swaylock
+- Waybar
+- Mako
+
 **NEW!** There are now scripts that make a best-effort attempt to install the above dependencies.
 - For Arch, there is `./install_arch.sh` which should work reliably.
     - I use Arch on all my systems and it covers all the dependencies very well, so this should work fine

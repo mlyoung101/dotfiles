@@ -51,6 +51,10 @@ source ~/.config/fish/kanagawa.fish
 # zoxide
 zoxide init fish --cmd cd | source
 
+# cursor
+set -x XCURSOR_THEME Breeze_Light
+set -x XCURSOR_SIZE 24
+
 # Try to prefer Wayland by default for SDL applications
 # Removed 06/08/2025 since it breaks every single Steam game
 # TODO only set this if it's an interactive shell
