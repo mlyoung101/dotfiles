@@ -136,7 +136,17 @@ return {
 				Snacks.picker.grep({
 					hidden = true,
 					ignored = true,
-					exclude = { "build**/**", "*.json", "target/**", "install/**", "log/**", "debug/**", "release/**" },
+					exclude = {
+						"build**/**",
+						"*.json",
+						"target/**",
+						"install/**",
+						"log/**",
+						"debug/**",
+						"release/**",
+						".venv/**",
+						"venv/**",
+					},
 				})
 			end,
 			desc = "Grep",
