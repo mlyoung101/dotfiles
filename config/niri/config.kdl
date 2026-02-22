@@ -256,16 +256,30 @@ layout {
 // which may be more convenient to use.
 // spawn-at-startup "alacritty" "-e" "fish"
 spawn-at-startup "waybar"
-spawn-at-startup "anyrun"
+spawn-at-startup "anyrun" "daemon"
 spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "sunsetr"
+spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Screenshot_20250411_024346.png"
+// https://www.reddit.com/r/cachyos/comments/1q5u8lu/comment/ny2sdr8/
+// https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
+spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
 
 // You can override environment variables for processes spawned by niri.
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
     _JAVA_AWT_WM_NONREPARENTING "1"
+
+    // https://www.reddit.com/r/cachyos/comments/1q5u8lu/comment/ny2q6p9/
+    // DISPLAY ":1"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORM "wayland"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "0"
+    QT_QPA_PLATFORMTHEME "kde"
+    QT_QPA_PLATFORMTHEME_QT6 "kde"
+    XDG_SESSION_TYPE "wayland"
+    XDG_CURRENT_DESKTOP "niri"
 }
 
 cursor {
@@ -283,7 +297,7 @@ prefer-no-csd
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Niri %Y-%m-%d %H-%M-%S.png"
 
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null
@@ -454,8 +468,9 @@ binds {
     Mod+T { spawn "wezterm"; }
     Mod+R { spawn "anyrun"; }
     // TODO configure
-    Mod+Alt+L hotkey-overlay-title="Lock screen" { spawn "swaylock" "--screenshots" "--key-hl-color" "FF8941" "--indicator" "--indicator-radius" "150" "--clock" "--fade-in" "0.2" "--effect-vignette" "0.7:0.7" "--ring-color" "FFC041" "--effect-blur" "10x6"; }
-    // TODO floating
+    Mod+Alt+L hotkey-overlay-title="Lock screen" {
+        spawn "swaylock" "--indicator-idle-visible";
+    }
     Mod+E hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.

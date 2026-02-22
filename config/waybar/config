@@ -96,7 +96,7 @@
     },
     "custom/power": {
         "format": "⏻",
-        "on-click": "nwg-bar"
+        "on-click": "wleave"
     },
     "user": {
         "format": "{user}",

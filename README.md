@@ -46,6 +46,9 @@ The new TWM setup requires:
 - Swaylock
 - Waybar
 - Mako
+- Anyrun
+- wleave
+- network-manager-applet
 
 **NEW!** There are now scripts that make a best-effort attempt to install the above dependencies.
 - For Arch, there is `./install_arch.sh` which should work reliably.
