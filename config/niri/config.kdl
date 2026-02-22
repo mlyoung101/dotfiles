@@ -264,6 +264,7 @@ spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Scr
 // https://www.reddit.com/r/cachyos/comments/1q5u8lu/comment/ny2sdr8/
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
 spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
+spawn-at-startup "env" "XDG_MENU_PREFIX=arch-" "kbuildsycoca6" // dolphin file association
 
 // You can override environment variables for processes spawned by niri.
 environment {
@@ -469,7 +470,7 @@ binds {
     Mod+R { spawn "anyrun"; }
     // TODO configure
     Mod+Alt+L hotkey-overlay-title="Lock screen" {
-        spawn "swaylock" "--indicator-idle-visible";
+        spawn "swaylock" "--indicator-idle-visible" "--image" "/var/tmp/bing_wallpaper.jpg" "--show-failed-attempts" ;
     }
     Mod+E hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }
 
