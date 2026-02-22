@@ -44,19 +44,16 @@ The new TWM setup requires:
 - Niri
 - Sunsetr
 - Swaylock
+- Swaybg
 - Waybar
 - Mako
 - Anyrun
 - wleave
 - network-manager-applet
 
-**NEW!** There are now scripts that make a best-effort attempt to install the above dependencies.
+**(OUTDATED)** There are now scripts that make a best-effort attempt to install the above dependencies.
 - For Arch, there is `./install_arch.sh` which should work reliably.
     - I use Arch on all my systems and it covers all the dependencies very well, so this should work fine
-- For Ubuntu, there is `./install_ubuntu.sh` that only works on a best-effort basis because I really dislike
-Ubuntu and only use it at work.
-    - This currently requires you build Neovim from source until the year 2100 when they actually ship Neovim
-      0.10 in the default repos
 - Windows TBA, similar to Ubuntu but worse. This will be a nightmare.
 
 ### Installing
