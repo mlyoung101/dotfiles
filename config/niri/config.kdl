@@ -109,13 +109,16 @@ output "Dell Inc. DELL P3424WEB HZBCD84" {
     mode "3440x1440@59.973"
 }
 
+output "AU Optronics 0xF49A Unknown" {
+    scale 1.2
+}
+
 // disable hot corners
 gestures {
     hot-corners {
         off
     }
 }
-
 
 layout {
     // By default focus ring and border are rendered as a solid background rectangle
@@ -278,6 +281,10 @@ spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Scr
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
 spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
 spawn-at-startup "env" "XDG_MENU_PREFIX=arch-" "kbuildsycoca6" // dolphin file association
+
+// or manually:
+// env XDG_MENU_PREFIX=plasma- kbuildsycoca6
+// env XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 // You can override environment variables for processes spawned by niri.
 environment {

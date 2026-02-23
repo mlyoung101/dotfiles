@@ -136,6 +136,7 @@ return {
 				Snacks.picker.grep({
 					hidden = true,
 					ignored = true,
+					-- gitignore ignored files
 					exclude = {
 						"build**/**",
 						"*.json",
@@ -146,6 +147,8 @@ return {
 						"release/**",
 						".venv/**",
 						"venv/**",
+						"*.log",
+						"runs/**"
 					},
 				})
 			end,
