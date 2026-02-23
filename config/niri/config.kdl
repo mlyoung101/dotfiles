@@ -265,6 +265,8 @@ layout {
     //   together with the previously focused column.
     // - "always", the focused column will always be centered.
     center-focused-column "never"
+
+    background-color "transparent"
 }
 
 // Add lines like this to spawn processes at startup.
@@ -472,7 +474,15 @@ window-rule {
 window-rule {
     match app-id="WezTerm"
 
+    // FIXME is this even right?
     default-column-width { proportion 0.4; }
+}
+
+// Overview
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
 }
 
 binds {
