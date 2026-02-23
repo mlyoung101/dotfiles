@@ -103,6 +103,19 @@ output "Microstep MPG341CX OLED Unknown" {
     // automatically.
 }
 
+output "Dell Inc. DELL P3424WEB HZBCD84" {
+    scale 1.2
+
+    mode "3440x1440@59.973"
+}
+
+// disable hot corners
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 
 layout {
     // By default focus ring and border are rendered as a solid background rectangle

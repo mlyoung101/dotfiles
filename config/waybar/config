@@ -125,7 +125,7 @@
         "on-scroll-down": "playerctl previous"
     },
     "custom/temperature":{
-      "exec": "$HOME/.config/waybar/scripts/temp.sh",
+      "exec": "$HOME/.config/waybar/scripts/temp.fish",
       "interval": 2,
       "return-type": "json",
       "tooltip": false

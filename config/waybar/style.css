@@ -1,3 +1,5 @@
+/* Taken from: https://github.com/nfoert/niri-dotfiles/blob/main/waybar/style.css */
+
 * {
 	border: none;
 	font-family: "FiraCode Nerd Font";
@@ -40,7 +42,7 @@ tooltip label {
 	margin-bottom: 0px;
 	transition: none;
 
-	font-size: 12px;
+	font-size: 14px;
 	color: white;
 	background-color: rgba(41, 42, 52, 0.8);
 	border: 2px solid rgb(69, 71, 87);
