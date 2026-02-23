@@ -270,7 +270,6 @@ layout {
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
-// spawn-at-startup "alacritty" "-e" "fish"
 spawn-at-startup "waybar"
 spawn-at-startup "anyrun" "daemon"
 spawn-at-startup "mako"
@@ -281,10 +280,10 @@ spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Scr
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
 spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
 spawn-at-startup "env" "XDG_MENU_PREFIX=arch-" "kbuildsycoca6" // dolphin file association
+spawn-at-startup "fish" "/home/matt/.config/niri/swaylock.fish"
 
 // or manually:
-// env XDG_MENU_PREFIX=plasma- kbuildsycoca6
-// env XDG_MENU_PREFIX=arch- kbuildsycoca6
+// env XDG_MENU_PREFIX=plasma- kbuildsycoca6; env XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 // You can override environment variables for processes spawned by niri.
 environment {
@@ -301,6 +300,12 @@ environment {
     QT_QPA_PLATFORMTHEME_QT6 "kde"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
+}
+
+// https://github.com/niri-wm/niri/wiki/Configuration:-Miscellaneous#clipboard
+// disable middle click paste
+clipboard {
+    disable-primary
 }
 
 cursor {
