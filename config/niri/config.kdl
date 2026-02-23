@@ -495,7 +495,8 @@ binds {
     Mod+R { spawn "anyrun"; }
     // TODO configure
     Mod+Alt+L hotkey-overlay-title="Lock screen" {
-        spawn "swaylock" "--indicator-idle-visible" "--image" "/var/tmp/bing_wallpaper.jpg" "--show-failed-attempts" ;
+        spawn "swaylock" "--clock" "--indicator-idle-visible" "--image" "/var/tmp/bing_wallpaper.jpg" \
+            "--show-failed-attempts" "--effect-blur" "10x1" "--effect-vignette" "0.25:1" ;
     }
     Mod+E hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }
 

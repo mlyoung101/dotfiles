@@ -43,7 +43,7 @@ yet an exhaustive list):
 The new TWM setup requires:
 - Niri
 - Sunsetr
-- Swaylock
+- Swaylock-Effects
 - Swaybg
 - Waybar
 - Mako
