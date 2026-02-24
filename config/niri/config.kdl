@@ -283,6 +283,7 @@ spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Scr
 spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
 spawn-at-startup "env" "XDG_MENU_PREFIX=arch-" "kbuildsycoca6" // dolphin file association
 spawn-at-startup "fish" "/home/matt/.config/niri/swaylock.fish"
+spawn-at-startup "play" "/usr/share/sounds/oxygen/stereo/desktop-login-short.ogg"
 
 // or manually:
 // env XDG_MENU_PREFIX=plasma- kbuildsycoca6; env XDG_MENU_PREFIX=arch- kbuildsycoca6

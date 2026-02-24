@@ -19,11 +19,10 @@
         "custom/power"
     ],
     "pulseaudio": {
-        "tooltip": false,
         "scroll-step": 5,
         "format": "{icon} {volume}%",
         "format-muted": "{icon} {volume}%",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "play /usr/share/sounds/ocean/stereo/audio-volume-change.oga",
         "format-icons": {
             "default": [
                 "",
@@ -35,7 +34,7 @@
     "network": {
         "tooltip": false,
         "format-wifi": "  {essid}",
-        "format-ethernet": "󰈀 {ifname} | {bandwidthTotalBytes}",
+        "format-ethernet": "󰈀 {ifname}",
     },
     "backlight": {
         "tooltip": false,
@@ -67,7 +66,27 @@
         "spacing": 10
     },
     "clock": {
-        "format": "  {:%I:%M %p %d/%m/%y}"
+        "format": "  {:%I:%M %p %d/%m/%y}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode"          : "month",
+            "weeks-pos"     : "right",
+            // kanagawa
+            // set -l red C34043 red
+            // set -l orange FF9E64 brred
+            // set -l yellow C0A36E yellow
+            // set -l green 76946A green
+            // set -l purple 957FB8 magenta
+            // set -l cyan 7AA89F cyan
+            // set -l pink D27E99 brmagenta
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#658594'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#C34043'><b><u>{}</u></b></span>"
+            }
+        }
     },
     "cpu": {
         "interval": 15,
@@ -88,11 +107,6 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "blueman-manager"
-    },
-    "custom/launcher": {
-        "format": "∞",
-        "on-click": "fuzzel",
-        "on-click-right": "killall fuzzel"
     },
     "custom/power": {
         "format": "⏻",
@@ -126,7 +140,7 @@
     },
     "custom/temperature":{
       "exec": "$HOME/.config/waybar/scripts/temp.fish",
-      "interval": 2,
+      "interval": 15,
       "return-type": "json",
       "tooltip": false
     },

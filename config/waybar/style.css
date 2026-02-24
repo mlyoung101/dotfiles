@@ -49,6 +49,15 @@ tooltip label {
 	border-radius: 10px;
 }
 
+#clock {
+	font-weight: bold;
+	color: #D27E99;
+}
+
+calendar, #calendar, cal, #cal {
+	font-size: 24px;
+}
+
 #battery.charging,
 #battery.plugged {
 	color: white;
