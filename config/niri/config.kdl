@@ -655,9 +655,8 @@ binds {
     // Mod+BracketRight { consume-or-expel-window-right; }
 
     Mod+D { switch-preset-column-width; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
-    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
+    Mod+F { maximize-window-to-edges; }
+    Mod+Shift+F { maximize-column; }
     Mod+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
 
