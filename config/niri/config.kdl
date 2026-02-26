@@ -282,8 +282,11 @@ spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Scr
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
 spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" // dolphin file association
 spawn-at-startup "env" "XDG_MENU_PREFIX=arch-" "kbuildsycoca6" // dolphin file association
+// setup swayidle (badly named script, lol)
 spawn-at-startup "fish" "/home/matt/.config/niri/swaylock.fish"
 spawn-at-startup "play" "/usr/share/sounds/oxygen/stereo/desktop-login-short.ogg"
+// session manager
+spawn-at-startup "nirinit"
 
 // or manually:
 // env XDG_MENU_PREFIX=plasma- kbuildsycoca6; env XDG_MENU_PREFIX=arch- kbuildsycoca6
