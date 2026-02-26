@@ -1,0 +1,13 @@
+position = "Bottom"
+
+[appearance]
+font_name = "DejaVu Sans"
+scale_factor = 1.2
+
+[modules]
+left = [ "Workspaces", "SystemInfo", "Tray" ]
+center = [ "" ]
+right = [ "MediaPlayer", "Settings", "Clock" ]
+
+[clock]
+format = "%I:%M %p %d/%m/%y"

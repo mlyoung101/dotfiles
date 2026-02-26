@@ -34,7 +34,8 @@ tooltip label {
 #workspaces,
 #power-profiles-daemon,
 #custom-temperature,
-#custom-music {
+#custom-music,
+#custom-notification {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;

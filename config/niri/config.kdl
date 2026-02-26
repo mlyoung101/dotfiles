@@ -274,7 +274,7 @@ layout {
 // which may be more convenient to use.
 spawn-at-startup "waybar"
 spawn-at-startup "anyrun" "daemon"
-spawn-at-startup "mako"
+spawn-at-startup "swaync"
 spawn-at-startup "nm-applet"
 spawn-at-startup "sunsetr"
 spawn-at-startup "swaybg" "--image" "/home/matt/Dropbox/Other/Wallpapers/ENA_Screenshot_20250411_024346.png"
