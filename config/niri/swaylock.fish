@@ -8,10 +8,7 @@ if test "$hostname" = "gecko"
     swayidle -d -w \
         # turn off screen after 15 minutes
         timeout 900 'niri msg action power-off-monitors' \
-        resume 'niri msg action power-on-monitors' \
-        # lock after 5 minutes
-        timeout 300 $LOCKER \
-        before-sleep $LOCKER
+        resume 'niri msg action power-on-monitors'
 end
 
 if test "$hostname" = "serpent"
@@ -19,7 +16,6 @@ if test "$hostname" = "serpent"
     swayidle -d -w \
         # turn off after 10 minutes
         timeout 600 'niri msg action power-off-monitors' \
-        resume 'niri msg action power-on-monitors' \
-        before-sleep $LOCKER
+        resume 'niri msg action power-on-monitors'
 end
 
