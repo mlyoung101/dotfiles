@@ -1,0 +1,6 @@
+[skip]
+apps = ["1password"]
+
+[launch]
+"org.wezfurlong.wezterm" = "wezterm"
+"spotify" = "spotify-launcher"
