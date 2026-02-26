@@ -287,6 +287,8 @@ require("lazy").setup({
 
                 ruff = {}, -- ruff ruff :3
 
+                fixjson = {},
+
                 -- NOTE: jdtls is handled by AUR, so we can use it with the jdtls extension
             }
 
@@ -302,8 +304,8 @@ require("lazy").setup({
             -- vim.lsp.enable("slang-server")
 
             vim.lsp.config("sv-slingshot", {
-                -- cmd = { "/home/matt/workspace/slingshot/build_debug/slingshot_asan" },
-                cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build/slingshot" },
+                cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build_debug/slingshot_asan" },
+                -- cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build/slingshot" },
                 root_markers = { ".git", ".slingshot.yaml" },
                 filetypes = {
                     "systemverilog",

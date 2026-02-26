@@ -46,12 +46,12 @@ The new TWM setup requires:
 - Swaylock-Effects
 - Swaybg
 - Waybar
-- Mako
 - Anyrun
 - wleave
 - network-manager-applet
 - Sox
 - [nirinit](https://github.com/amaanq/nirinit)
+- SwayNotificationCenter
 
 **(OUTDATED)** There are now scripts that make a best-effort attempt to install the above dependencies.
 - For Arch, there is `./install_arch.sh` which should work reliably.
