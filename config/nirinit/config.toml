@@ -1,6 +1,7 @@
 [skip]
-apps = ["1password"]
+apps = ["1password", "org.pwmt.zathura"]
 
 [launch]
 "org.wezfurlong.wezterm" = "wezterm"
 "spotify" = "spotify-launcher"
+"org.mozilla.Thunderbird" = "thunderbird"
