@@ -24,6 +24,8 @@ riverctl spawn "swaybg --image /home/matt/Dropbox/Other/Wallpapers/ENA_Screensho
 riverctl spawn "env XDG_MENU_PREFIX=plasma- kbuildsycoca6" # dolphin file association
 riverctl spawn "env XDG_MENU_PREFIX=arch- kbuildsycoca6" # dolphin file association
 
+riverctl map normal Super R spawn anyrun
+
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super+Shift Return spawn wezterm
 

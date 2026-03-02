@@ -34,8 +34,8 @@
     },
     "network": {
         "tooltip": false,
-        "format-wifi": "  {essid}",
-        "format-ethernet": "󰈀 {ifname}",
+        "format-wifi": " ",
+        "format-ethernet": "󰈀 ",
     },
     "backlight": {
         "tooltip": false,
