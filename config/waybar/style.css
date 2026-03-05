@@ -45,14 +45,15 @@ tooltip label {
 
 	font-size: 14px;
 	color: white;
-	background-color: rgba(41, 42, 52, 0.8);
-	border: 2px solid rgb(69, 71, 87);
-	border-radius: 10px;
+	/* background-color: rgba(41, 42, 52, 0.8); */
+	/* border: 2px solid rgb(69, 71, 87); */
+	/* border-radius: 10px; */
 }
 
 #clock {
 	font-weight: bold;
 	color: #D27E99;
+	font-size: 18px;
 }
 
 calendar, #calendar, cal, #cal {

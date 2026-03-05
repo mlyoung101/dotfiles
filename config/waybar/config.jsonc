@@ -35,7 +35,7 @@
     "network": {
         "tooltip": false,
         "format-wifi": " ",
-        "format-ethernet": "󰈀 ",
+        "format-ethernet": "󰈀",
     },
     "backlight": {
         "tooltip": false,

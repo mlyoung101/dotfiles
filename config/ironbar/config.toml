@@ -1,0 +1,28 @@
+position = "bottom"
+height = 32
+
+[[start]]
+type = "workspaces"
+
+[[start]]
+type = "sys_info"
+format = [
+    "CPU: {cpu_percent}%",
+    "MEM: {memory_percent}%",
+]
+
+[[end]]
+type = "battery"
+show_if = "ls /sys/class/power_supply/ | grep --quiet '^BAT'"
+
+[end.interval]
+cpu = 1
+
+[[end]]
+type = "clipboard"
+
+[[end]]
+type = "tray"
+
+[[end]]
+type = "clock"
