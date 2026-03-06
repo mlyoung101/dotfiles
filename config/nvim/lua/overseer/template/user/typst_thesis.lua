@@ -5,8 +5,8 @@ return {
         local file = vim.fn.expand("%:p")
         return {
             cmd = { "typst", "watch" },
-            args = { "uqthesis.typ" },
-            cwd = "/home/matt/workspace/tamara/papers/thesis",
+            args = { "mqthesis.typ" },
+            cwd = "/home/matt/workspace/dissertation",
             components = { "default" },
         }
     end,

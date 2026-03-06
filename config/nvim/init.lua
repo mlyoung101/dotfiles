@@ -289,6 +289,8 @@ require("lazy").setup({
 
                 fixjson = {},
 
+                tclint = {},
+
                 -- NOTE: jdtls is handled by AUR, so we can use it with the jdtls extension
             }
 
@@ -817,7 +819,7 @@ bbmap("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", bbopts)
 
 -- Pin thesis main file (for TaMaRa thesis)
 vim.api.nvim_create_user_command("PinThesisMain", function()
-    tinymistPinMain("/home/matt/workspace/tamara/papers/thesis/uqthesis.typ")
+    tinymistPinMain("/home/matt/workspace/dissertation/mqthesis.typ")
 end, {})
 
 -- Diagnostic keymaps

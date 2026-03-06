@@ -33,7 +33,7 @@
         }
     },
     "network": {
-        "tooltip": false,
+        "tooltip-format-wifi": "{essid} | {ifname}",
         "format-wifi": " ",
         "format-ethernet": "󰈀",
     },

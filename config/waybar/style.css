@@ -10,7 +10,7 @@ window#waybar {
 }
 
 tooltip {
-	background-color: rgba(41, 42, 52, 0.8);
+	background-color: black;
 	border: 2px solid rgb(69, 71, 87);
 }
 
