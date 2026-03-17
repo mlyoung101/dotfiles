@@ -287,6 +287,7 @@ spawn-at-startup "fish" "/home/matt/.config/niri/swaylock.fish"
 spawn-at-startup "play" "/usr/share/sounds/oxygen/stereo/desktop-login-short.ogg"
 // session manager
 spawn-at-startup "nirinit"
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 
 // or manually:
 // env XDG_MENU_PREFIX=plasma- kbuildsycoca6; env XDG_MENU_PREFIX=arch- kbuildsycoca6
@@ -512,7 +513,7 @@ binds {
         spawn "swaylock" "--clock" "--indicator-idle-visible" "--image" "/var/tmp/bing_wallpaper.jpg" \
             "--show-failed-attempts" "--effect-blur" "10x1" "--effect-vignette" "0.25:1" ;
     }
-    Mod+E hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }
+    Mod+E { spawn "dolphin"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }

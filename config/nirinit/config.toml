@@ -6,3 +6,5 @@ apps = ["1password", "org.pwmt.zathura"]
 "spotify" = "spotify-launcher"
 "org.mozilla.Thunderbird" = "thunderbird"
 "Zotero" = "zotero"
+"org.kde.dolphin" = "dolphin"
+"org.pwmt.zathura" = "zathura"
