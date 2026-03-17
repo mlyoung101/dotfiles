@@ -291,6 +291,8 @@ require("lazy").setup({
 
                 tclint = {},
 
+                nil_ls = {},
+
                 -- NOTE: jdtls is handled by AUR, so we can use it with the jdtls extension
             }
 
@@ -306,7 +308,7 @@ require("lazy").setup({
             -- vim.lsp.enable("slang-server")
 
             vim.lsp.config("sv-slingshot", {
-                -- cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build_debug/slingshot_asan" },
+                -- cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build_debug/slingshot_tsan" },
                 cmd = { "fdintercept", "--", "/home/matt/workspace/slingshot/build/slingshot" },
                 root_markers = { ".git", ".slingshot.yaml" },
                 filetypes = {
